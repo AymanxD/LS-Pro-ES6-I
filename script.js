@@ -1,43 +1,43 @@
-var me = 'LambdaSchool';
+const me = 'LambdaSchool';
 
-var you = 'Student';
+const you = 'Student';
 
-var numberOfCatsIOwn = 0;
+let numberOfCatsIOwn = 0;
 
-function buyCat() {
+const buycat = () => {
   numberOfCatsIOwn++;
   conosle.log('I now own ' + numberOfCatsIOwn + ' cats!');
 }
 
-var favoriteBooks = [
+const favoriteBooks = [
   'Captain Underpants',
   'Magic Treehouse',
   'Brown Bear, Brown Bear, What Do You See?',
   'Slaughterhouse 5',
-];
+]
 
-var likesCaptainUnderpants = function(bookList) {
-  var yes = false;
+const likesCaptainUnderpants = (bookList) => {
+  let yes = false;
   bookList.forEach(function(book) {
     if (book === 'Captain Underpants') yes = true;
   });
   return yes;
 }
 
-var result = likesCaptainUnderpants();
+const result = likesCaptainUnderpants(favoriteBooks);
 
-var sumInput = function() {
-  var total = 0;
-  for (var i = 0; i < arguments.length; i++) {
+const sumInput = () => {
+  let total = 0;
+  for (let i = 0; i < arguments.length; i++) {
     total += arguments[i];
   }
   return total;
 }
 
-var sum = sumInput(1, 2, 3, 4, 5);
+const sum = sumInput(1, 2, 3, 4, 5);
 
-var add = function(x, x) {
-  return x + x;
+const add = (x, y) => {
+  return x + y;
 }
 
-var sum = add(5, 5);
+const addSum = add(5, 5);
